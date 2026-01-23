@@ -1,2 +1,0 @@
-# prd-mods
-prod-mods
