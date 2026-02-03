@@ -5,8 +5,8 @@ services:
     user: root
     environment:
       # Server configuration
-      - SRCDS_TOKEN=AF0D7EACEDE6EF9437257F7E3AF3DAF1                 # Game Server Token from https://steamcommunity.com/dev/managegameservers
-      - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+      - SRCDS_TOKEN=69D0D42E5D47B56203CA5E287FC8C662                 # Game Server Token from https://steamcommunity.com/dev/managegameservers
+      - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=0
       - DEBUG=0                     # (0 - off, 1 - steamcmd, 2 - cs2, 3 - all)
       - STEAMAPPVALIDATE=0          # (0 - no validation, 1 - enable validation)
       - CS2_SERVERNAME=changeme     # (Set the visible name for your private server.)
@@ -64,7 +64,7 @@ services:
 
   cs2-db:
     image: mariadb:latest
-    container_name: cs2-db
+    container_name: cs2-db2
     restart: unless-stopped
     environment:
       - MARIADB_ROOT_PASSWORD=rootpassword
